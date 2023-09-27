@@ -3,7 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generations.API", "Generations.API\Generations.API.csproj", "{BF04575E-2612-44CE-B52F-9CE827075079}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business Logic", "Business Logic", "{6DC563CB-0203-4DE0-9060-4ECF1D4A16A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generations.DA", "Generations.DA\Generations.DA.csproj", "{736A91D0-C18D-4255-BBE6-DD445A2AFEF8}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF04575E-2612-44CE-B52F-9CE827075079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF04575E-2612-44CE-B52F-9CE827075079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF04575E-2612-44CE-B52F-9CE827075079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF04575E-2612-44CE-B52F-9CE827075079}.Release|Any CPU.Build.0 = Release|Any CPU
+		{736A91D0-C18D-4255-BBE6-DD445A2AFEF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{736A91D0-C18D-4255-BBE6-DD445A2AFEF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{736A91D0-C18D-4255-BBE6-DD445A2AFEF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{736A91D0-C18D-4255-BBE6-DD445A2AFEF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
