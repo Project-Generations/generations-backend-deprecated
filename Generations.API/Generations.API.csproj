@@ -15,11 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Generations.DA\Generations.DA.csproj" />
+    <ProjectReference Include="..\Pokemon.BL\Pokemon.BL.csproj" />
   </ItemGroup>
 
 </Project>

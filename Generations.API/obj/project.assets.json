@@ -499,6 +499,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.11",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.11",
+          "Pokemon.BL": "1.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
         },
         "compile": {
@@ -506,6 +507,16 @@
         },
         "runtime": {
           "bin/placeholder/Generations.DA.dll": {}
+        }
+      },
+      "Pokemon.BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Pokemon.BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Pokemon.BL.dll": {}
         }
       }
     }
@@ -1470,12 +1481,18 @@
       "type": "project",
       "path": "../Generations.DA/Generations.DA.csproj",
       "msbuildProject": "../Generations.DA/Generations.DA.csproj"
+    },
+    "Pokemon.BL/1.0.0": {
+      "type": "project",
+      "path": "../Pokemon.BL/Pokemon.BL.csproj",
+      "msbuildProject": "../Pokemon.BL/Pokemon.BL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Generations.DA >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.11",
+      "Pokemon.BL >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -1508,6 +1525,9 @@
           "projectReferences": {
             "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.DA\\Generations.DA.csproj": {
               "projectPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.DA\\Generations.DA.csproj"
+            },
+            "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Pokemon.BL\\Pokemon.BL.csproj": {
+              "projectPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Pokemon.BL\\Pokemon.BL.csproj"
             }
           }
         }

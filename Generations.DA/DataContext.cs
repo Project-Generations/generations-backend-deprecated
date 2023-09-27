@@ -15,10 +15,10 @@ namespace Generations.DA
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Pokemon>().ToTable("pokemons");
-            modelBuilder.Entity<CreatedPokemon>().ToTable("created_pokemons");
-            modelBuilder.Entity<Item>().ToTable("items");
-            modelBuilder.Entity<Move>().ToTable("moves");
+            modelBuilder.Entity<Pokemons>().ToTable("pokemons");
+            modelBuilder.Entity<CreatedPokemons>().ToTable("created_pokemons");
+            modelBuilder.Entity<Items>().ToTable("items");
+            modelBuilder.Entity<Moves>().ToTable("moves");
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -27,9 +27,9 @@ namespace Generations.DA
             optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
         }
 
-        public DbSet<Pokemon> Pokemons { get; set; }
-        public DbSet<CreatedPokemon> CreatedPokemons { get; set; }
-        public DbSet<Item> Items { get; set; }
-        public DbSet<Move> Moves { get; set; }
+        public DbSet<Pokemons> Pokemons { get; set; }
+        public DbSet<CreatedPokemons> CreatedPokemons { get; set; }
+        public DbSet<Items> Items { get; set; }
+        public DbSet<Moves> Moves { get; set; }
     }
 }

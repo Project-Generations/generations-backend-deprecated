@@ -1,0 +1,11 @@
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Team.BL\bin\Debug\net6.0\Team.BL.deps.json
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Team.BL\bin\Debug\net6.0\Team.BL.dll
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Team.BL\bin\Debug\net6.0\Team.BL.pdb
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Team.BL\obj\Debug\net6.0\Team.BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Team.BL\obj\Debug\net6.0\Team.BL.AssemblyInfoInputs.cache
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Team.BL\obj\Debug\net6.0\Team.BL.AssemblyInfo.cs
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Team.BL\obj\Debug\net6.0\Team.BL.csproj.CoreCompileInputs.cache
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Team.BL\obj\Debug\net6.0\Team.BL.dll
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Team.BL\obj\Debug\net6.0\refint\Team.BL.dll
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Team.BL\obj\Debug\net6.0\Team.BL.pdb
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Team.BL\obj\Debug\net6.0\ref\Team.BL.dll

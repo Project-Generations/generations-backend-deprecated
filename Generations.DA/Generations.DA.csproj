@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
+    <ProjectReference Include="..\Pokemon.BL\Pokemon.BL.csproj" />
   </ItemGroup>
 
 </Project>

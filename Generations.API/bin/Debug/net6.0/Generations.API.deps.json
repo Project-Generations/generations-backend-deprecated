@@ -10,6 +10,7 @@
         "dependencies": {
           "Generations.DA": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "7.0.11",
+          "Pokemon.BL": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
@@ -309,10 +310,16 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.11",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.11",
+          "Pokemon.BL": "1.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
         },
         "runtime": {
           "Generations.DA.dll": {}
+        }
+      },
+      "Pokemon.BL/1.0.0": {
+        "runtime": {
+          "Pokemon.BL.dll": {}
         }
       }
     }
@@ -527,6 +534,11 @@
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
     },
     "Generations.DA/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Pokemon.BL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

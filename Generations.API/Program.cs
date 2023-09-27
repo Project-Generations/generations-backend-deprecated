@@ -1,6 +1,13 @@
 using Generations.DA;
+using Generations.DA.Data;
+using Pokemon.BL.Interfaces;
+using Pokemon.BL.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//Dependency inversion
+builder.Services.AddScoped<iPokemonService, PokemonService>();
+builder.Services.AddScoped<iPokemon, PokemonDA>();
 
 // Add services to the container.
 builder.Services.AddDbContext<DataContext>();
@@ -17,6 +24,15 @@ builder.Services.Configure<RouteOptions>(options =>
 });
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+
+    var context = services.GetRequiredService<DataContext>();
+    context.Database.EnsureCreated();
+    DbSeeder.Initialize(context);
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
