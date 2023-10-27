@@ -38,5 +38,22 @@ namespace Generations.API.Controllers
                 throw;
             }
         }
+
+        [HttpGet("{id}")]
+        public PokemonByIdDTO Get(int id)
+        {
+            try
+            {
+                Pokemon.BL.Entities.Pokemon pokemon = iPokemonService.GetPokemonById(id);
+
+                PokemonByIdDTO pokemonByIdDTO = new(pokemon);
+
+                return pokemonByIdDTO;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }

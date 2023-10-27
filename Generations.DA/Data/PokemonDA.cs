@@ -12,6 +12,38 @@ namespace Generations.DA.Data
             this.dataContext = dataContext;
         }
 
+        public Pokemon.BL.Entities.Pokemon GetPokemonById(int id)
+        {
+            using (dataContext)
+            {
+                try
+                {
+                    Generations.DA.Models.Pokemons getPokemon = dataContext.Pokemons.Single(poke => poke.Id == id);
+                    Generations.DA.Models.Stats getStatsFromPokemon = dataContext.Stats.Single(poke => poke.Id == id);
+
+                    Pokemon.BL.Entities.Pokemon pokemon = new()
+                    {
+                        Id = getPokemon.Id,
+                        Name = getPokemon.Name,
+                        Sprite = getPokemon.Sprite,
+                        Type = getPokemon.Type,
+                        BaseHp = getStatsFromPokemon.BaseHp,
+                        BaseAttack = getStatsFromPokemon.BaseAttack,
+                        BaseDefense = getStatsFromPokemon.BaseDefense,
+                        BaseSpecialAttack = getStatsFromPokemon.BaseSpecialAttack,
+                        BaseSpecialDefense = getStatsFromPokemon.BaseSpecialDefense,
+                        BaseSpeed = getStatsFromPokemon.BaseSpeed,
+                    };
+
+                    return pokemon;
+                }
+                catch (MySqlException exception)
+                {
+                    throw exception;
+                }
+            }
+        }
+
         public List<Pokemon.BL.Entities.Pokemon> GetPokemons()
         {
             using (dataContext)
@@ -23,19 +55,12 @@ namespace Generations.DA.Data
 
                     foreach (var _pokemon in _pokemons)
                     {
-                        Pokemon.BL.Entities.Pokemon pokemon = new();
-
-                        //Map data
-                        pokemon.PokemonId = _pokemon.PokemonId;
-                        pokemon.Name = _pokemon.Name;
-                        pokemon.Sprite = _pokemon.Sprite;
-                        pokemon.Type = _pokemon.Type;
-                        pokemon.Stats[0] = _pokemon.BaseHp;
-                        pokemon.Stats[1] = _pokemon.BaseAttack;
-                        pokemon.Stats[2] = _pokemon.BaseDefense;
-                        pokemon.Stats[3] = _pokemon.BaseSpecialAttack;
-                        pokemon.Stats[4] = _pokemon.BaseSpecialDefense;
-                        pokemon.Stats[5] = _pokemon.BaseSpeed;
+                        Pokemon.BL.Entities.Pokemon pokemon = new()
+                        {
+                            Id = _pokemon.Id,
+                            Name = _pokemon.Name,
+                            Sprite = _pokemon.Sprite,
+                        };
 
                         pokemons.Add(pokemon);
                     }

@@ -19,6 +19,7 @@ namespace Generations.DA
             modelBuilder.Entity<CreatedPokemons>().ToTable("created_pokemons");
             modelBuilder.Entity<Items>().ToTable("items");
             modelBuilder.Entity<Moves>().ToTable("moves");
+            modelBuilder.Entity<Stats>().ToTable("stats");
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -31,5 +32,6 @@ namespace Generations.DA
         public DbSet<CreatedPokemons> CreatedPokemons { get; set; }
         public DbSet<Items> Items { get; set; }
         public DbSet<Moves> Moves { get; set; }
+        public DbSet<Stats> Stats { get; set; }
     }
 }
