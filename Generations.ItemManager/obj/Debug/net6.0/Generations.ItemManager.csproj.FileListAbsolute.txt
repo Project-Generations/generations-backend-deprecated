@@ -1,0 +1,11 @@
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.ItemManager\bin\Debug\net6.0\Generations.ItemManager.deps.json
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.ItemManager\bin\Debug\net6.0\Generations.ItemManager.dll
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.ItemManager\bin\Debug\net6.0\Generations.ItemManager.pdb
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.ItemManager\obj\Debug\net6.0\Generations.ItemManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.ItemManager\obj\Debug\net6.0\Generations.ItemManager.AssemblyInfoInputs.cache
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.ItemManager\obj\Debug\net6.0\Generations.ItemManager.AssemblyInfo.cs
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.ItemManager\obj\Debug\net6.0\Generations.ItemManager.csproj.CoreCompileInputs.cache
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.ItemManager\obj\Debug\net6.0\Generations.ItemManager.dll
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.ItemManager\obj\Debug\net6.0\refint\Generations.ItemManager.dll
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.ItemManager\obj\Debug\net6.0\Generations.ItemManager.pdb
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.ItemManager\obj\Debug\net6.0\ref\Generations.ItemManager.dll

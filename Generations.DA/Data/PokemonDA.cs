@@ -4,6 +4,7 @@ using MySqlConnector;
 using MoveEntity = Generations.DA.Entities.Moves;
 using PokemonEntity = Generations.DA.Entities.Pokemons;
 using PokemonModel = Generations.PokemonManager.Models.Pokemon;
+using StatEntity = Generations.DA.Entities.Stats;
 
 
 namespace Generations.DA.Data
@@ -31,6 +32,7 @@ namespace Generations.DA.Data
                         Name = getPokemon.Name,
                         Sprite = getPokemon.Sprite,
                         Type = getPokemon.Type,
+                        Stats = getPokemon.Stats.Select(StatEntity.ConvertStatEntity).ToList(),
                         Moves = getPokemon.Moves.Select(MoveEntity.ConvertMoveEntity).ToList(),
                     };
 

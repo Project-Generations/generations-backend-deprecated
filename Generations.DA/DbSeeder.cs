@@ -50,6 +50,7 @@ namespace Generations.DA
                 Category = "Special"
             };
 
+            //Bulbasaurs stats mockdata
             Stats BulbasaurHp = new()
             {
                 Name = "HP",
@@ -86,6 +87,7 @@ namespace Generations.DA
                 Value = 45
             };
 
+            //Charmanders stats mockdata
             Stats CharmanderHp = new()
             {
                 Name = "HP",
@@ -122,6 +124,43 @@ namespace Generations.DA
                 Value = 65
             };
 
+            //Squirtles stats mockdata
+            Stats SquirtleHp = new()
+            {
+                Name = "HP",
+                Value = 44
+            };
+
+            Stats SquirtleAttack = new()
+            {
+                Name = "Attack",
+                Value = 48
+            };
+
+            Stats SquirtleDefense = new()
+            {
+                Name = "Defense",
+                Value = 65
+            };
+
+            Stats SquirtleSpecialAttack = new()
+            {
+                Name = "Special Attack",
+                Value = 50
+            };
+
+            Stats SquirtleSpecialDefense = new()
+            {
+                Name = "Special Defense",
+                Value = 64
+            };
+
+            Stats SquirtleSpeed = new()
+            {
+                Name = "Speed",
+                Value = 43
+            };
+
 
             if (context.Pokemons.Any())
             {
@@ -154,7 +193,7 @@ namespace Generations.DA
                     Name="Squirtle",
                     Sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png",
                     Type="Water",
-                    Stats = { CharmanderHp, CharmanderAttack, CharmanderDefense, CharmanderSpecialAttack, CharmanderSpecialDefense, CharmanderSpeed },
+                    Stats = { SquirtleHp, SquirtleAttack, SquirtleDefense, SquirtleSpecialAttack, SquirtleSpecialDefense, SquirtleSpeed },
                     Moves = { tackle, quickAttack },
                 },
             };
