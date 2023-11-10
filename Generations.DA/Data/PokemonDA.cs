@@ -1,5 +1,10 @@
-﻿using MySqlConnector;
-using Pokemon.BL.Interfaces;
+﻿using Generations.PokemonManager.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using MySqlConnector;
+using MoveEntity = Generations.DA.Entities.Moves;
+using PokemonEntity = Generations.DA.Entities.Pokemons;
+using PokemonModel = Generations.PokemonManager.Models.Pokemon;
+
 
 namespace Generations.DA.Data
 {
@@ -12,27 +17,21 @@ namespace Generations.DA.Data
             this.dataContext = dataContext;
         }
 
-        public Pokemon.BL.Entities.Pokemon GetPokemonById(int id)
+        public PokemonModel GetPokemonById(int id)
         {
             using (dataContext)
             {
                 try
                 {
-                    Generations.DA.Models.Pokemons getPokemon = dataContext.Pokemons.Single(poke => poke.Id == id);
-                    Generations.DA.Models.Stats getStatsFromPokemon = dataContext.Stats.Single(poke => poke.Id == id);
+                    PokemonEntity getPokemon = dataContext.Pokemons.Include(s => s.Stats).Include(m => m.Moves).Single(poke => poke.Id == id);
 
-                    Pokemon.BL.Entities.Pokemon pokemon = new()
+                    PokemonModel pokemon = new()
                     {
                         Id = getPokemon.Id,
                         Name = getPokemon.Name,
                         Sprite = getPokemon.Sprite,
                         Type = getPokemon.Type,
-                        BaseHp = getStatsFromPokemon.BaseHp,
-                        BaseAttack = getStatsFromPokemon.BaseAttack,
-                        BaseDefense = getStatsFromPokemon.BaseDefense,
-                        BaseSpecialAttack = getStatsFromPokemon.BaseSpecialAttack,
-                        BaseSpecialDefense = getStatsFromPokemon.BaseSpecialDefense,
-                        BaseSpeed = getStatsFromPokemon.BaseSpeed,
+                        Moves = getPokemon.Moves.Select(MoveEntity.ConvertMoveEntity).ToList(),
                     };
 
                     return pokemon;
@@ -44,18 +43,18 @@ namespace Generations.DA.Data
             }
         }
 
-        public List<Pokemon.BL.Entities.Pokemon> GetPokemons()
+        public List<PokemonModel> GetPokemons()
         {
             using (dataContext)
             {
                 try
                 {
                     var _pokemons = dataContext.Pokemons.ToList();
-                    List<Pokemon.BL.Entities.Pokemon> pokemons = new();
+                    List<PokemonModel> pokemons = new();
 
                     foreach (var _pokemon in _pokemons)
                     {
-                        Pokemon.BL.Entities.Pokemon pokemon = new()
+                        PokemonModel pokemon = new()
                         {
                             Id = _pokemon.Id,
                             Name = _pokemon.Name,

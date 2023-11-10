@@ -1,6 +1,7 @@
 ﻿using Generations.API.DTOs;
+using Generations.PokemonManager.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Pokemon.BL.Interfaces;
+using PokemonModel = Generations.PokemonManager.Models.Pokemon;
 
 namespace Generations.API.Controllers
 {
@@ -23,9 +24,9 @@ namespace Generations.API.Controllers
 
             try
             {
-                List<Pokemon.BL.Entities.Pokemon> pokemons = iPokemonService.GetPokemons();
+                List<PokemonModel> pokemons = iPokemonService.GetPokemons();
 
-                foreach (Pokemon.BL.Entities.Pokemon pokemon in pokemons)
+                foreach (PokemonModel pokemon in pokemons)
                 {
                     PokemonDTO pokemonDTO = new(pokemon);
                     pokemonDTOs.Add(pokemonDTO);
@@ -44,7 +45,7 @@ namespace Generations.API.Controllers
         {
             try
             {
-                Pokemon.BL.Entities.Pokemon pokemon = iPokemonService.GetPokemonById(id);
+                PokemonModel pokemon = iPokemonService.GetPokemonById(id);
 
                 PokemonByIdDTO pokemonByIdDTO = new(pokemon);
 

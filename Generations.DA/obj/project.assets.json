@@ -418,14 +418,14 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
-      "Pokemon.BL/1.0.0": {
+      "Generations.PokemonManager/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/Pokemon.BL.dll": {}
+          "bin/placeholder/Generations.PokemonManager.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Pokemon.BL.dll": {}
+          "bin/placeholder/Generations.PokemonManager.dll": {}
         }
       }
     }
@@ -1073,19 +1073,19 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Pokemon.BL/1.0.0": {
+    "Generations.PokemonManager/1.0.0": {
       "type": "project",
-      "path": "../Pokemon.BL/Pokemon.BL.csproj",
-      "msbuildProject": "../Pokemon.BL/Pokemon.BL.csproj"
+      "path": "../Generations.PokemonManager/Generations.PokemonManager.csproj",
+      "msbuildProject": "../Generations.PokemonManager/Generations.PokemonManager.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Generations.PokemonManager >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.11",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.11",
       "Microsoft.EntityFrameworkCore.Relational >= 7.0.11",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.11",
-      "Pokemon.BL >= 1.0.0",
       "Pomelo.EntityFrameworkCore.MySql >= 7.0.0"
     ]
   },
@@ -1116,8 +1116,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Pokemon.BL\\Pokemon.BL.csproj": {
-              "projectPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Pokemon.BL\\Pokemon.BL.csproj"
+            "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.PokemonManager\\Generations.PokemonManager.csproj": {
+              "projectPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.PokemonManager\\Generations.PokemonManager.csproj"
             }
           }
         }

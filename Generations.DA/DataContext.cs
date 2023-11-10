@@ -1,4 +1,4 @@
-﻿using Generations.DA.Models;
+﻿using Generations.DA.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 

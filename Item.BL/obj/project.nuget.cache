@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HS4lqCBNAf4egpb0q4c5HyhpTArAbDW2KfuPQXukdcjkPtSk1vSiQPTsavyi+o5Ll5SxnMk6EuU7jickxiy76Q==",
+  "dgSpecHash": "Fb7TRtBYHkvpD2/kIRIVJ7NUagjeQyEKg19QcNEh+pks8Efb39Mii6VrME1RKMaN4fzXX+nyg9N2PgWQNuQUEg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Item.BL\\Item.BL.csproj",
+  "projectFilePath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Item.BL\\Generations.ItemManager.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

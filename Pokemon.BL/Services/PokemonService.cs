@@ -1,4 +1,5 @@
 ﻿using Pokemon.BL.Interfaces;
+using PokemonModel = Pokemon.BL.Models.Pokemon;
 
 namespace Pokemon.BL.Services
 {
@@ -12,11 +13,11 @@ namespace Pokemon.BL.Services
             this.iPokemon = iPokemon;
         }
 
-        public Entities.Pokemon GetPokemonById(int id)
+        public PokemonModel GetPokemonById(int id)
         {
             try
             {
-                Pokemon.BL.Entities.Pokemon pokemon = iPokemon.GetPokemonById(id);
+                PokemonModel pokemon = iPokemon.GetPokemonById(id);
                 return pokemon;
             }
             catch (Exception)
@@ -25,9 +26,9 @@ namespace Pokemon.BL.Services
             }
         }
 
-        public List<Entities.Pokemon> GetPokemons()
+        public List<PokemonModel> GetPokemons()
         {
-            List<Entities.Pokemon> pokemons;
+            List<PokemonModel> pokemons;
 
             try
             {

@@ -8,11 +8,11 @@
     ".NETCoreApp,Version=v6.0": {
       "Generations.DA/1.0.0": {
         "dependencies": {
+          "Generations.PokemonManager": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.11",
           "Microsoft.EntityFrameworkCore.Design": "7.0.11",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.11",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.11",
-          "Pokemon.BL": "1.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
         },
         "runtime": {
@@ -266,9 +266,9 @@
           }
         }
       },
-      "Pokemon.BL/1.0.0": {
+      "Generations.PokemonManager/1.0.0": {
         "runtime": {
-          "Pokemon.BL.dll": {}
+          "Generations.PokemonManager.dll": {}
         }
       }
     }
@@ -447,7 +447,7 @@
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
     },
-    "Pokemon.BL/1.0.0": {
+    "Generations.PokemonManager/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

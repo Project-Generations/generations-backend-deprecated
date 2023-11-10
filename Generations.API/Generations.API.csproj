@@ -16,7 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Generations.DA\Generations.DA.csproj" />
-    <ProjectReference Include="..\Pokemon.BL\Pokemon.BL.csproj" />
+    <ProjectReference Include="..\Generations.PokemonManager\Generations.PokemonManager.csproj" />
   </ItemGroup>
 
 </Project>

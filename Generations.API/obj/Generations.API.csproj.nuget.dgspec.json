@@ -31,8 +31,8 @@
               "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.DA\\Generations.DA.csproj": {
                 "projectPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.DA\\Generations.DA.csproj"
               },
-              "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Pokemon.BL\\Pokemon.BL.csproj": {
-                "projectPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Pokemon.BL\\Pokemon.BL.csproj"
+              "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.PokemonManager\\Generations.PokemonManager.csproj": {
+                "projectPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.PokemonManager\\Generations.PokemonManager.csproj"
               }
             }
           }
@@ -105,8 +105,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Pokemon.BL\\Pokemon.BL.csproj": {
-                "projectPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Pokemon.BL\\Pokemon.BL.csproj"
+              "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.PokemonManager\\Generations.PokemonManager.csproj": {
+                "projectPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.PokemonManager\\Generations.PokemonManager.csproj"
               }
             }
           }
@@ -166,14 +166,14 @@
         }
       }
     },
-    "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Pokemon.BL\\Pokemon.BL.csproj": {
+    "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.PokemonManager\\Generations.PokemonManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Pokemon.BL\\Pokemon.BL.csproj",
-        "projectName": "Pokemon.BL",
-        "projectPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Pokemon.BL\\Pokemon.BL.csproj",
+        "projectUniqueName": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.PokemonManager\\Generations.PokemonManager.csproj",
+        "projectName": "Generations.PokemonManager",
+        "projectPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.PokemonManager\\Generations.PokemonManager.csproj",
         "packagesPath": "C:\\Users\\ben\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Pokemon.BL\\obj\\",
+        "outputPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.PokemonManager\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ben\\AppData\\Roaming\\NuGet\\NuGet.Config",

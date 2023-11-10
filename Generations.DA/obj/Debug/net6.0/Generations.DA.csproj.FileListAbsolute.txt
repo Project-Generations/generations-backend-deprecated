@@ -12,6 +12,6 @@ C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.DA\obj\Debug
 C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.DA\obj\Debug\net6.0\Generations.DA.pdb
 C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.DA\obj\Debug\net6.0\Generations.DA.genruntimeconfig.cache
 C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.DA\obj\Debug\net6.0\ref\Generations.DA.dll
-C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.DA\bin\Debug\net6.0\Pokemon.BL.dll
-C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.DA\bin\Debug\net6.0\Pokemon.BL.pdb
 C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.DA\obj\Debug\net6.0\Generations.DA.csproj.CopyComplete
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.DA\bin\Debug\net6.0\Generations.PokemonManager.dll
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.DA\bin\Debug\net6.0\Generations.PokemonManager.pdb

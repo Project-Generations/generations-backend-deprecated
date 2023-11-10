@@ -54,5 +54,5 @@ C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.API\bin\Debu
 C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.API\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.API\bin\Debug\net6.0\System.Text.Json.dll
 C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.API\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
-C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.API\bin\Debug\net6.0\Pokemon.BL.dll
-C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.API\bin\Debug\net6.0\Pokemon.BL.pdb
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.API\bin\Debug\net6.0\Generations.PokemonManager.dll
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.API\bin\Debug\net6.0\Generations.PokemonManager.pdb

@@ -1,4 +1,6 @@
-﻿namespace Generations.API.DTOs
+﻿using PokemonModel = Generations.PokemonManager.Models.Pokemon;
+
+namespace Generations.API.DTOs
 {
     public class PokemonDTO
     {
@@ -6,7 +8,7 @@
         public string Name { get; set; } = string.Empty;
         public string Sprite { get; set; } = string.Empty;
 
-        public PokemonDTO(Pokemon.BL.Entities.Pokemon pokemon)
+        public PokemonDTO(PokemonModel pokemon)
         {
             this.PokemonId = pokemon.Id;
             this.Name = pokemon.Name;

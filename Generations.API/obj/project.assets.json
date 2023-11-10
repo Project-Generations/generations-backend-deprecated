@@ -497,9 +497,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Generations.PokemonManager": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.11",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.11",
-          "Pokemon.BL": "1.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
         },
         "compile": {
@@ -509,14 +509,14 @@
           "bin/placeholder/Generations.DA.dll": {}
         }
       },
-      "Pokemon.BL/1.0.0": {
+      "Generations.PokemonManager/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/Pokemon.BL.dll": {}
+          "bin/placeholder/Generations.PokemonManager.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Pokemon.BL.dll": {}
+          "bin/placeholder/Generations.PokemonManager.dll": {}
         }
       }
     }
@@ -1482,17 +1482,17 @@
       "path": "../Generations.DA/Generations.DA.csproj",
       "msbuildProject": "../Generations.DA/Generations.DA.csproj"
     },
-    "Pokemon.BL/1.0.0": {
+    "Generations.PokemonManager/1.0.0": {
       "type": "project",
-      "path": "../Pokemon.BL/Pokemon.BL.csproj",
-      "msbuildProject": "../Pokemon.BL/Pokemon.BL.csproj"
+      "path": "../Generations.PokemonManager/Generations.PokemonManager.csproj",
+      "msbuildProject": "../Generations.PokemonManager/Generations.PokemonManager.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Generations.DA >= 1.0.0",
+      "Generations.PokemonManager >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.11",
-      "Pokemon.BL >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -1526,8 +1526,8 @@
             "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.DA\\Generations.DA.csproj": {
               "projectPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.DA\\Generations.DA.csproj"
             },
-            "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Pokemon.BL\\Pokemon.BL.csproj": {
-              "projectPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Pokemon.BL\\Pokemon.BL.csproj"
+            "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.PokemonManager\\Generations.PokemonManager.csproj": {
+              "projectPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.PokemonManager\\Generations.PokemonManager.csproj"
             }
           }
         }

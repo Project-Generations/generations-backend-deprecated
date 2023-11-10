@@ -1,15 +1,9 @@
-﻿using Generations.DA.Models;
+﻿using Generations.DA.Entities;
 
 namespace Generations.DA
 {
     public class DbSeeder
     {
-
-        public DbSeeder()
-        {
-
-        }
-
         public static void Initialize(DataContext context)
         {
             Moves tackle = new Moves()
@@ -34,6 +28,101 @@ namespace Generations.DA
                 Category = "Physical"
             };
 
+            Moves vineWhip = new Moves()
+            {
+                Name = "Vine Whip",
+                Description = "The target is struck with slender, whiplike vines to inflict damage.",
+                Type = "Grass",
+                PowerPoints = 25,
+                Power = 45,
+                Accuracy = 100,
+                Category = "Physical"
+            };
+
+            Moves ember = new Moves()
+            {
+                Name = "Ember",
+                Description = "The target is attacked with small flames. This may also leave the target with a burn.",
+                Type = "Fire",
+                PowerPoints = 25,
+                Power = 40,
+                Accuracy = 100,
+                Category = "Special"
+            };
+
+            Stats BulbasaurHp = new()
+            {
+                Name = "HP",
+                Value = 45
+            };
+
+            Stats BulbasaurAttack = new()
+            {
+                Name = "Attack",
+                Value = 49
+            };
+
+            Stats BulbasaurDefense = new()
+            {
+                Name = "Defense",
+                Value = 49
+            };
+
+            Stats BulbasaurSpecialAttack = new()
+            {
+                Name = "Special Attack",
+                Value = 65
+            };
+
+            Stats BulbasaurSpecialDefense = new()
+            {
+                Name = "Special Defense",
+                Value = 65
+            };
+
+            Stats BulbasaurSpeed = new()
+            {
+                Name = "Speed",
+                Value = 45
+            };
+
+            Stats CharmanderHp = new()
+            {
+                Name = "HP",
+                Value = 39
+            };
+
+            Stats CharmanderAttack = new()
+            {
+                Name = "Attack",
+                Value = 52
+            };
+
+            Stats CharmanderDefense = new()
+            {
+                Name = "Defense",
+                Value = 43
+            };
+
+            Stats CharmanderSpecialAttack = new()
+            {
+                Name = "Special Attack",
+                Value = 60
+            };
+
+            Stats CharmanderSpecialDefense = new()
+            {
+                Name = "Special Defense",
+                Value = 50
+            };
+
+            Stats CharmanderSpeed = new()
+            {
+                Name = "Speed",
+                Value = 65
+            };
+
+
             if (context.Pokemons.Any())
             {
                 return;
@@ -47,16 +136,8 @@ namespace Generations.DA
                     Name="Bulbasaur",
                     Sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
                     Type="Grass",
-                    Stats = new Stats
-                    {
-                        BaseHp=45,
-                        BaseAttack=49,
-                        BaseDefense=49,
-                        BaseSpecialAttack=65,
-                        BaseSpecialDefense=65,
-                        BaseSpeed=45,
-                    },
-                    Moves = { tackle, quickAttack },
+                    Stats = { BulbasaurHp, BulbasaurAttack, BulbasaurDefense, BulbasaurSpecialAttack, BulbasaurSpecialDefense, BulbasaurSpeed },
+                    Moves = { tackle, quickAttack, vineWhip },
                 },
                 new Pokemons
                 {
@@ -64,16 +145,8 @@ namespace Generations.DA
                     Name="Charmander",
                     Sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
                     Type="Fire",
-                    Stats = new Stats
-                    {
-                        BaseHp=39,
-                        BaseAttack=52,
-                        BaseDefense=43,
-                        BaseSpecialAttack=60,
-                        BaseSpecialDefense=50,
-                        BaseSpeed=65,
-                    },
-                    Moves = { tackle, quickAttack },
+                    Stats = { CharmanderHp, CharmanderAttack, CharmanderDefense, CharmanderSpecialAttack, CharmanderSpecialDefense, CharmanderSpeed },
+                    Moves = { tackle, quickAttack, ember },
                 },
                 new Pokemons
                 {
@@ -81,15 +154,7 @@ namespace Generations.DA
                     Name="Squirtle",
                     Sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png",
                     Type="Water",
-                    Stats = new Stats
-                    {
-                        BaseHp=44,
-                        BaseAttack=48,
-                        BaseDefense=65,
-                        BaseSpecialAttack=50,
-                        BaseSpecialDefense=64,
-                        BaseSpeed=43,
-                    },
+                    Stats = { CharmanderHp, CharmanderAttack, CharmanderDefense, CharmanderSpecialAttack, CharmanderSpecialDefense, CharmanderSpeed },
                     Moves = { tackle, quickAttack },
                 },
             };

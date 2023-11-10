@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Move.BL\\Move.BL.csproj",
-      "projectName": "Move.BL",
-      "projectPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Move.BL\\Move.BL.csproj",
+      "projectUniqueName": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Move.BL\\Generations.MoveManager.csproj",
+      "projectName": "Generations.MoveManager",
+      "projectPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Move.BL\\Generations.MoveManager.csproj",
       "packagesPath": "C:\\Users\\ben\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Move.BL\\obj\\",
       "projectStyle": "PackageReference",

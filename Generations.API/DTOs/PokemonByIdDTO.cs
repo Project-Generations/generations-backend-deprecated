@@ -1,4 +1,7 @@
-﻿namespace Generations.API.DTOs
+﻿using Generations.PokemonManager.Models;
+using PokemonModel = Generations.PokemonManager.Models.Pokemon;
+
+namespace Generations.API.DTOs
 {
     public class PokemonByIdDTO
     {
@@ -6,27 +9,19 @@
         public string Name { get; set; } = string.Empty;
         public string Type { get; set; } = string.Empty;
         public string Sprite { get; set; } = string.Empty;
+        public List<Move> Moves { get; set; }
 
         //Base Stats
-        public int BaseHp { get; set; }
-        public int BaseAttack { get; set; }
-        public int BaseDefense { get; set; }
-        public int BaseSpecialAttack { get; set; }
-        public int BaseSpecialDefense { get; set; }
-        public int BaseSpeed { get; set; }
+        public List<Stat> Stats { get; set; } = new();
 
-        public PokemonByIdDTO(Pokemon.BL.Entities.Pokemon pokemon)
+        public PokemonByIdDTO(PokemonModel pokemon)
         {
             this.PokemonId = pokemon.Id;
             this.Name = pokemon.Name;
             this.Type = pokemon.Type;
             this.Sprite = pokemon.Sprite;
-            this.BaseHp = pokemon.BaseHp;
-            this.BaseAttack = pokemon.BaseAttack;
-            this.BaseDefense = pokemon.BaseDefense;
-            this.BaseSpecialAttack = pokemon.BaseSpecialAttack;
-            this.BaseSpecialDefense = pokemon.BaseSpecialDefense;
-            this.BaseSpeed = pokemon.BaseSpeed;
+            this.Stats = pokemon.Stats;
+            this.Moves = pokemon.Moves;
         }
     }
 }

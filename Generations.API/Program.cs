@@ -1,7 +1,7 @@
 using Generations.DA;
 using Generations.DA.Data;
-using Pokemon.BL.Interfaces;
-using Pokemon.BL.Services;
+using Generations.PokemonManager.Interfaces;
+using Generations.PokemonManager.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

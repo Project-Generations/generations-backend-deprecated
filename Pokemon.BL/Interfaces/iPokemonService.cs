@@ -1,8 +1,10 @@
-﻿namespace Pokemon.BL.Interfaces
+﻿using PokemonModel = Generations.PokemonManager.Models.Pokemon;
+
+namespace Pokemon.BL.Interfaces
 {
     public interface iPokemonService
     {
-        public List<Pokemon.BL.Entities.Pokemon> GetPokemons();
-        public Pokemon.BL.Entities.Pokemon GetPokemonById(int id);
+        public List<PokemonModel> GetPokemons();
+        public PokemonModel GetPokemonById(int id);
     }
 }

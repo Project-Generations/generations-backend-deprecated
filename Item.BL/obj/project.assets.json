@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Item.BL\\Item.BL.csproj",
-      "projectName": "Item.BL",
-      "projectPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Item.BL\\Item.BL.csproj",
+      "projectUniqueName": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Item.BL\\Generations.ItemManager.csproj",
+      "projectName": "Generations.ItemManager",
+      "projectPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Item.BL\\Generations.ItemManager.csproj",
       "packagesPath": "C:\\Users\\ben\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Item.BL\\obj\\",
       "projectStyle": "PackageReference",
