@@ -21,7 +21,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Generations.ItemManager\Generations.ItemManager.csproj" />
     <ProjectReference Include="..\Generations.PokemonManager\Generations.PokemonManager.csproj" />
+    <ProjectReference Include="..\Generations.TypeManager\Generations.TypeManager.csproj" />
   </ItemGroup>
 
 </Project>

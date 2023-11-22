@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Generations.TypeManager\Generations.TypeManager.csproj" />
+  </ItemGroup>
+
 </Project>

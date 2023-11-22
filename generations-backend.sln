@@ -9,9 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business Logic", "Business 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generations.DA", "Generations.DA\Generations.DA.csproj", "{736A91D0-C18D-4255-BBE6-DD445A2AFEF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generations.PokemonManager", "Generations.PokemonManager\Generations.PokemonManager.csproj", "{BEE09641-658B-4764-A9CE-B33D1371C4FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generations.PokemonManager", "Generations.PokemonManager\Generations.PokemonManager.csproj", "{BEE09641-658B-4764-A9CE-B33D1371C4FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generations.ItemManager", "Generations.ItemManager\Generations.ItemManager.csproj", "{8DE3FEDB-F03B-42A2-B8B6-B652E1519314}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generations.ItemManager", "Generations.ItemManager\Generations.ItemManager.csproj", "{8DE3FEDB-F03B-42A2-B8B6-B652E1519314}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generations.TypeManager", "Generations.TypeManager\Generations.TypeManager.csproj", "{BD8D2BAA-6299-4ED5-A98F-CA4A1C989D09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{8DE3FEDB-F03B-42A2-B8B6-B652E1519314}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DE3FEDB-F03B-42A2-B8B6-B652E1519314}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DE3FEDB-F03B-42A2-B8B6-B652E1519314}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD8D2BAA-6299-4ED5-A98F-CA4A1C989D09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD8D2BAA-6299-4ED5-A98F-CA4A1C989D09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD8D2BAA-6299-4ED5-A98F-CA4A1C989D09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD8D2BAA-6299-4ED5-A98F-CA4A1C989D09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +48,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{BEE09641-658B-4764-A9CE-B33D1371C4FF} = {6DC563CB-0203-4DE0-9060-4ECF1D4A16A5}
 		{8DE3FEDB-F03B-42A2-B8B6-B652E1519314} = {6DC563CB-0203-4DE0-9060-4ECF1D4A16A5}
+		{BD8D2BAA-6299-4ED5-A98F-CA4A1C989D09} = {6DC563CB-0203-4DE0-9060-4ECF1D4A16A5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {86E6B3F9-5A75-4BF1-8E6C-356D34802D90}

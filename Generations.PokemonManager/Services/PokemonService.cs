@@ -5,11 +5,10 @@ namespace Generations.PokemonManager.Services
 {
     public class PokemonService : iPokemonService
     {
-        private iPokemon iPokemon;
+        private readonly iPokemon iPokemon;
 
         public PokemonService(iPokemon iPokemon)
         {
-
             this.iPokemon = iPokemon;
         }
 

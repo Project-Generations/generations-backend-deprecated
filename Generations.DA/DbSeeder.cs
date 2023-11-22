@@ -6,7 +6,42 @@ namespace Generations.DA
     {
         public static void Initialize(DataContext context)
         {
-            Moves tackle = new Moves()
+            Types fire = new()
+            {
+                Id = 1,
+                Name = "fire",
+            };
+            Types water = new()
+            {
+                Id = 2,
+                Name = "water",
+            };
+            Types grass = new()
+            {
+                Id = 3,
+                Name = "grass",
+            };
+            Types ground = new()
+            {
+                Id = 4,
+                Name = "ground",
+            };
+
+            Abilities testAbility = new()
+            {
+                Name = "Test Ability",
+                Description = "This is a normal ability",
+                IsHiddenAbility = false,
+            };
+
+            Abilities testHiddenAbility = new()
+            {
+                Name = "Test Hidden Ability",
+                Description = "This is a hidden ability",
+                IsHiddenAbility = true,
+            };
+
+            Moves tackle = new()
             {
                 Name = "Tackle",
                 Description = "Tackle is one of the most common and basic moves a Pokémon learns. It deals damage with no additional effects.",
@@ -17,7 +52,7 @@ namespace Generations.DA
                 Category = "Physical"
             };
 
-            Moves quickAttack = new Moves()
+            Moves quickAttack = new()
             {
                 Name = "Quick Attack",
                 Description = "Quick Attack deals damage and has a priority of +1.",
@@ -28,7 +63,7 @@ namespace Generations.DA
                 Category = "Physical"
             };
 
-            Moves vineWhip = new Moves()
+            Moves vineWhip = new()
             {
                 Name = "Vine Whip",
                 Description = "The target is struck with slender, whiplike vines to inflict damage.",
@@ -39,7 +74,7 @@ namespace Generations.DA
                 Category = "Physical"
             };
 
-            Moves ember = new Moves()
+            Moves ember = new()
             {
                 Name = "Ember",
                 Description = "The target is attacked with small flames. This may also leave the target with a burn.",
@@ -174,8 +209,9 @@ namespace Generations.DA
                     Id=1,
                     Name="Bulbasaur",
                     Sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
-                    Type="Grass",
+                    Types={ grass },
                     Stats = { BulbasaurHp, BulbasaurAttack, BulbasaurDefense, BulbasaurSpecialAttack, BulbasaurSpecialDefense, BulbasaurSpeed },
+                    Abilities = { testAbility, testHiddenAbility},
                     Moves = { tackle, quickAttack, vineWhip },
                 },
                 new Pokemons
@@ -183,8 +219,9 @@ namespace Generations.DA
                     Id=2,
                     Name="Charmander",
                     Sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
-                    Type="Fire",
+                    Types={ fire },
                     Stats = { CharmanderHp, CharmanderAttack, CharmanderDefense, CharmanderSpecialAttack, CharmanderSpecialDefense, CharmanderSpeed },
+                    Abilities = { testAbility, testHiddenAbility},
                     Moves = { tackle, quickAttack, ember },
                 },
                 new Pokemons
@@ -192,8 +229,19 @@ namespace Generations.DA
                     Id=3,
                     Name="Squirtle",
                     Sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png",
-                    Type="Water",
+                    Types={ water },
                     Stats = { SquirtleHp, SquirtleAttack, SquirtleDefense, SquirtleSpecialAttack, SquirtleSpecialDefense, SquirtleSpeed },
+                    Abilities = { testAbility, testHiddenAbility},
+                    Moves = { tackle, quickAttack },
+                },
+                new Pokemons
+                {
+                    Id=4,
+                    Name="Quagsire",
+                    Sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/195.png",
+                    Types={ water, ground},
+                    Stats = { SquirtleHp, SquirtleAttack, SquirtleDefense, SquirtleSpecialAttack, SquirtleSpecialDefense, SquirtleSpeed },
+                    Abilities = { testAbility, testHiddenAbility},
                     Moves = { tackle, quickAttack },
                 },
             };
@@ -201,6 +249,42 @@ namespace Generations.DA
             foreach (Pokemons pokemon in pokemons)
             {
                 context.Pokemons.Add(pokemon);
+            }
+            context.SaveChanges();
+
+            var items = new Items[]
+            {
+                new Items
+                {
+                    Id = 1,
+                    Name = "Choice Band",
+                    Description = "Increases Attack by 50%, but restricts the holder to only one move",
+                    Sprite = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/choice-band.png",
+                    IsHeldItem = true,
+                },
+
+                new Items
+                {
+                    Id = 2,
+                    Name = "Choice Scarf",
+                    Description = "Increases Speed by 50%, but restricts the holder to only one move",
+                    Sprite = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/choice-scarf.png",
+                    IsHeldItem = true,
+                },
+
+                new Items
+                {
+                    Id = 3,
+                    Name = "Choice Specs",
+                    Description = "Increases Special Attack by 50%, but restricts the holder to only one move",
+                    Sprite = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/choice-specs.png",
+                    IsHeldItem = true,
+                },
+            };
+
+            foreach (Items item in items)
+            {
+                context.Items.Add(item);
             }
             context.SaveChanges();
         }

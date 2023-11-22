@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "Generations.PokemonManager/1.0.0": {
+        "dependencies": {
+          "Generations.TypeManager": "1.0.0"
+        },
         "runtime": {
           "Generations.PokemonManager.dll": {}
+        }
+      },
+      "Generations.TypeManager/1.0.0": {
+        "runtime": {
+          "Generations.TypeManager.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Generations.PokemonManager/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Generations.TypeManager/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -497,7 +497,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Generations.ItemManager": "1.0.0",
           "Generations.PokemonManager": "1.0.0",
+          "Generations.TypeManager": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.11",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.11",
           "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
@@ -509,14 +511,37 @@
           "bin/placeholder/Generations.DA.dll": {}
         }
       },
+      "Generations.ItemManager/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Generations.ItemManager.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Generations.ItemManager.dll": {}
+        }
+      },
       "Generations.PokemonManager/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Generations.TypeManager": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Generations.PokemonManager.dll": {}
         },
         "runtime": {
           "bin/placeholder/Generations.PokemonManager.dll": {}
+        }
+      },
+      "Generations.TypeManager/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Generations.TypeManager.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Generations.TypeManager.dll": {}
         }
       }
     }
@@ -1482,16 +1507,28 @@
       "path": "../Generations.DA/Generations.DA.csproj",
       "msbuildProject": "../Generations.DA/Generations.DA.csproj"
     },
+    "Generations.ItemManager/1.0.0": {
+      "type": "project",
+      "path": "../Generations.ItemManager/Generations.ItemManager.csproj",
+      "msbuildProject": "../Generations.ItemManager/Generations.ItemManager.csproj"
+    },
     "Generations.PokemonManager/1.0.0": {
       "type": "project",
       "path": "../Generations.PokemonManager/Generations.PokemonManager.csproj",
       "msbuildProject": "../Generations.PokemonManager/Generations.PokemonManager.csproj"
+    },
+    "Generations.TypeManager/1.0.0": {
+      "type": "project",
+      "path": "../Generations.TypeManager/Generations.TypeManager.csproj",
+      "msbuildProject": "../Generations.TypeManager/Generations.TypeManager.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Generations.DA >= 1.0.0",
+      "Generations.ItemManager >= 1.0.0",
       "Generations.PokemonManager >= 1.0.0",
+      "Generations.TypeManager >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.11",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
@@ -1526,8 +1563,14 @@
             "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.DA\\Generations.DA.csproj": {
               "projectPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.DA\\Generations.DA.csproj"
             },
+            "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.ItemManager\\Generations.ItemManager.csproj": {
+              "projectPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.ItemManager\\Generations.ItemManager.csproj"
+            },
             "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.PokemonManager\\Generations.PokemonManager.csproj": {
               "projectPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.PokemonManager\\Generations.PokemonManager.csproj"
+            },
+            "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.TypeManager\\Generations.TypeManager.csproj": {
+              "projectPath": "C:\\Users\\ben\\Documents\\Fontys\\S3\\IP\\generations-backend\\Generations.TypeManager\\Generations.TypeManager.csproj"
             }
           }
         }

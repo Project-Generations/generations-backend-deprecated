@@ -56,3 +56,7 @@ C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.API\bin\Debu
 C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.API\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.API\bin\Debug\net6.0\Generations.PokemonManager.dll
 C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.API\bin\Debug\net6.0\Generations.PokemonManager.pdb
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.API\bin\Debug\net6.0\Generations.ItemManager.dll
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.API\bin\Debug\net6.0\Generations.ItemManager.pdb
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.API\bin\Debug\net6.0\Generations.TypeManager.dll
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.API\bin\Debug\net6.0\Generations.TypeManager.pdb

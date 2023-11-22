@@ -20,6 +20,8 @@ namespace Generations.DA
             modelBuilder.Entity<Items>().ToTable("items");
             modelBuilder.Entity<Moves>().ToTable("moves");
             modelBuilder.Entity<Stats>().ToTable("stats");
+            modelBuilder.Entity<Abilities>().ToTable("abilities");
+            modelBuilder.Entity<Types>().ToTable("types");
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -33,5 +35,7 @@ namespace Generations.DA
         public DbSet<Items> Items { get; set; }
         public DbSet<Moves> Moves { get; set; }
         public DbSet<Stats> Stats { get; set; }
+        public DbSet<Abilities> Abilities { get; set; }
+        public DbSet<Types> Types { get; set; }
     }
 }

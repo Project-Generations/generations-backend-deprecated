@@ -9,3 +9,7 @@ C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.PokemonManag
 C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.PokemonManager\obj\Debug\net6.0\refint\Generations.PokemonManager.dll
 C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.PokemonManager\obj\Debug\net6.0\Generations.PokemonManager.pdb
 C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.PokemonManager\obj\Debug\net6.0\ref\Generations.PokemonManager.dll
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.PokemonManager\bin\Debug\net6.0\Generations.TypeManager.dll
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.PokemonManager\bin\Debug\net6.0\Generations.TypeManager.pdb
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.PokemonManager\obj\Debug\net6.0\Generations.PokemonManager.csproj.AssemblyReference.cache
+C:\Users\ben\Documents\Fontys\S3\IP\generations-backend\Generations.PokemonManager\obj\Debug\net6.0\Generations.PokemonManager.csproj.CopyComplete

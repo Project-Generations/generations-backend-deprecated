@@ -8,7 +8,9 @@
     ".NETCoreApp,Version=v6.0": {
       "Generations.DA/1.0.0": {
         "dependencies": {
+          "Generations.ItemManager": "1.0.0",
           "Generations.PokemonManager": "1.0.0",
+          "Generations.TypeManager": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.11",
           "Microsoft.EntityFrameworkCore.Design": "7.0.11",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.11",
@@ -266,9 +268,22 @@
           }
         }
       },
+      "Generations.ItemManager/1.0.0": {
+        "runtime": {
+          "Generations.ItemManager.dll": {}
+        }
+      },
       "Generations.PokemonManager/1.0.0": {
+        "dependencies": {
+          "Generations.TypeManager": "1.0.0"
+        },
         "runtime": {
           "Generations.PokemonManager.dll": {}
+        }
+      },
+      "Generations.TypeManager/1.0.0": {
+        "runtime": {
+          "Generations.TypeManager.dll": {}
         }
       }
     }
@@ -447,7 +462,17 @@
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
     },
+    "Generations.ItemManager/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Generations.PokemonManager/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Generations.TypeManager/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
